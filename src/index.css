@@ -1,0 +1,89 @@
+@font-face {
+  font-family: pixel;
+  src: url('./fonts/joystix.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font: 18px "Century Gothic", Futura, sans-serif;
+  font-weight: bold;
+  margin: 30px;
+  background-color: ghostwhite;
+}
+
+ol, ul {
+  padding-left: 18px;
+}
+
+/*
+header{
+    position: fixed;
+    padding: 25px;
+    top: 0px;
+    font-size: 40px;
+    font-family: pixel;
+}
+*/
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(231, 253, 253);
+  border: 2px solid lightseagreen;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 85px;
+  height: 95px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 95px;
+  color: #ee5368;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 100px;
+}
+
+.game-info {
+  margin-left: 50px;
+}
+
+.btn-step{
+  background-color: rgb(255, 196, 87);
+  border-color: orange;
+  border-radius: 8px;
+  padding: 4px 4px 4px;
+  margin-bottom: 4px;
+  font-family: "Century Gothic", Futura, sans-serif;
+  font-size: 14px; 
+  transition: background 0.3s linear 0s;
+}
+
+      .btn-step:hover{
+        background: orange;
+        border-color: #ff7b00 ;
+      }
