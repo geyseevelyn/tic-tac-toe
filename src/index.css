@@ -1,10 +1,3 @@
-@font-face {
-  font-family: pixel;
-  src: url('./fonts/joystix.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font: 18px "Century Gothic", Futura, sans-serif;
   font-weight: bold;
@@ -15,16 +8,6 @@ body {
 ol, ul {
   padding-left: 18px;
 }
-
-/*
-header{
-    position: fixed;
-    padding: 25px;
-    top: 0px;
-    font-size: 40px;
-    font-family: pixel;
-}
-*/
 
 .board-row:after {
   clear: both;
